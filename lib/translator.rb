@@ -38,7 +38,7 @@ def get_english_meaning(emoticons, emoticon)
     new_lib[:get_meaning].each do |name, props|
       binding.pry
         if name.include?(emoticon)
-           trans_emote = emote[1]
+           trans_emote = props[1]
         end
     end
     trans_emote ? trans_emote : "Sorry, that emoticon was not found"
